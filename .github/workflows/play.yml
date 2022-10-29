@@ -8,8 +8,6 @@ jobs:
   play:
     name: Play Game
     runs-on: ubuntu-latest
-    if: startsWith(github.event.issue.title, 'Game: ')
-
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
