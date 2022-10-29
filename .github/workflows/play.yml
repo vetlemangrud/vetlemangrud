@@ -19,7 +19,7 @@ jobs:
       - run: |
           pip install -r requirements.txt
           python play.py
-          ffmpeg -i pillow_imagedraw.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" newest.mp4
+          ffmpeg -i pillow_imagedraw.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" newest.mp4 -y
           ffmpeg -f concat -safe 0 -i ffmpegconcatfiles.txt -c copy complete.mp4 -y
           git config user.name github-actions
           git config user.email github-actions@github.com
