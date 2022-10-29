@@ -1,0 +1,25 @@
+name: play
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  play:
+    name: Play Game
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, 'Game: ')
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+      - run: |
+          pip install -r requirements.txt
+          python play.py
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated"
+          git push
