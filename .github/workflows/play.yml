@@ -8,13 +8,13 @@ jobs:
   play:
     name: Play Game
     runs-on: ubuntu-latest
+    env:
+      ISSUE_TITLE: ${{ github.event.issue.title }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
-        env:
-          ISSUE_TITLE: ${{ github.event.issue.title }}
       - run: |
           pip install -r requirements.txt
           python play.py
