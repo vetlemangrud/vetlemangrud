@@ -26,4 +26,3 @@ jobs:
           git commit -m "generated"
           git push
       - uses: peter-evans/close-issue@v2
-      -
