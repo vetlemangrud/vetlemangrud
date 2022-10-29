@@ -13,14 +13,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
+      - uses: FedericoCarboni/setup-ffmpeg@v1
         with:
           python-version: '3.10' 
       - run: |
           pip install -r requirements.txt
           python play.py
+          ffmpeg -i pillow_imagedraw.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" video.mp4
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
           git commit -m "generated"
           git push
       - uses: peter-evans/close-issue@v2
+      -
