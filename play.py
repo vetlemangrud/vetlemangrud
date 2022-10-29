@@ -1,4 +1,5 @@
 import pyboy
+import os
 
 # Load the ROM file
 gameboy = pyboy.PyBoy("rom.gb")
@@ -10,10 +11,34 @@ try:
         gameboy.load_state(file)
 except Exception as e:
     print("Creating new save")
+
 # Set input
-gameboy.send_input(pyboy.WindowEvent.PRESS_BUTTON_A)
-gameboy.tick()
-gameboy.send_input(pyboy.WindowEvent.RELEASE_BUTTON_A)
+issueTitle = os.environ["ISSUE_TITLE"]
+buttonPresses = {
+    "A":pyboy.WindowEvent.PRESS_BUTTON_A,
+    "B":pyboy.WindowEvent.PRESS_BUTTON_B,
+    "START":pyboy.WindowEvent.PRESS_BUTTON_START,
+    "SELECT":pyboy.WindowEvent.PRESS_BUTTON_SELECT,
+    "UP":pyboy.WindowEvent.PRESS_ARROW_UP,
+    "DOWN":pyboy.WindowEvent.PRESS_ARROW_DOWN,
+    "LEFT":pyboy.WindowEvent.PRESS_ARROW_LEFT,
+    "RIGHT":pyboy.WindowEvent.PRESS_ARROW_RIGHT
+}
+buttonReleases = {
+    "A":pyboy.WindowEvent.RELEASE_BUTTON_A,
+    "B":pyboy.WindowEvent.RELEASE_BUTTON_B,
+    "START":pyboy.WindowEvent.RELEASE_BUTTON_START,
+    "SELECT":pyboy.WindowEvent.RELEASE_BUTTON_SELECT,
+    "UP":pyboy.WindowEvent.RELEASE_ARROW_UP,
+    "DOWN":pyboy.WindowEvent.RELEASE_ARROW_DOWN,
+    "LEFT":pyboy.WindowEvent.RELEASE_ARROW_LEFT,
+    "RIGHT":pyboy.WindowEvent.RELEASE_ARROW_RIGHT
+}
+
+if (issueTitle in buttonPresses.keys()):
+    gameboy.send_input(buttonPresses[issueTitle])
+    gameboy.tick()
+    gameboy.send_input(buttonReleases[issueTitle])
 
 images = []
 # Run the game for 500 frames (8-ish seconds)
