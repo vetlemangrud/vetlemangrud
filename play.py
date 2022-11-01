@@ -1,9 +1,13 @@
 import pyboy
 import os
+from PIL import Image
 
 # Load the ROM file
 gameboy = pyboy.PyBoy("rom.gb")
 gameboy.set_emulation_speed(0)
+
+# Load the frame
+frameImage = Image.open("vetlendo.png")
 
 # Load state
 try:
@@ -40,11 +44,16 @@ if (issueTitle in buttonPresses.keys()):
     gameboy.tick()
     gameboy.send_input(buttonReleases[issueTitle])
 
+def addFrame(image):
+    new = frameImage.copy()
+    new.paste(image, (68, 61), image.convert("RGBA"))
+    return new
+
 images = []
 # Run the game for 500 frames (8-ish seconds)
 for i in range(500):
     gameboy.tick()
-    images.append(gameboy.screen_image())
+    images.append(addFrame(gameboy.screen_image()))
 
 images[0].save('pillow_imagedraw.gif',
                save_all=True, append_images=images[1:], optimize=False, duration=(len(images)/60), loop=0)
