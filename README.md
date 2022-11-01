@@ -3,20 +3,20 @@
 
 ## Press a button
 
-[A](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else&title=A)
+[A](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Do+not+change+any+text%2C+just+click+%22Submit+new+issue%22.+When+the+issue+has+been+closed%2C+that+means+it+has+been+processed+%28Takes+around+40+seconds%29.+%0D%0A%0D%0ATo+view+the+new+state%2C+you+may+have+to+do+a+hard+reload+%28Typically+Ctrl%2BF5%29+on+the+readme.&title=A)
 
-[B](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else&title=B)
+[B](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Do+not+change+any+text%2C+just+click+%22Submit+new+issue%22.+When+the+issue+has+been+closed%2C+that+means+it+has+been+processed+%28Takes+around+40+seconds%29.+%0D%0A%0D%0ATo+view+the+new+state%2C+you+may+have+to+do+a+hard+reload+%28Typically+Ctrl%2BF5%29+on+the+readme.&title=B)
 
-[UP](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else&title=UP)
+[UP](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Do+not+change+any+text%2C+just+click+%22Submit+new+issue%22.+When+the+issue+has+been+closed%2C+that+means+it+has+been+processed+%28Takes+around+40+seconds%29.+%0D%0A%0D%0ATo+view+the+new+state%2C+you+may+have+to+do+a+hard+reload+%28Typically+Ctrl%2BF5%29+on+the+readme.&title=UP)
 
-[DOWN](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else&title=DOWN)
+[DOWN](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Do+not+change+any+text%2C+just+click+%22Submit+new+issue%22.+When+the+issue+has+been+closed%2C+that+means+it+has+been+processed+%28Takes+around+40+seconds%29.+%0D%0A%0D%0ATo+view+the+new+state%2C+you+may+have+to+do+a+hard+reload+%28Typically+Ctrl%2BF5%29+on+the+readme.&title=DOWN)
 
-[RIGHT](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else&title=RIGHT)
+[RIGHT](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Do+not+change+any+text%2C+just+click+%22Submit+new+issue%22.+When+the+issue+has+been+closed%2C+that+means+it+has+been+processed+%28Takes+around+40+seconds%29.+%0D%0A%0D%0ATo+view+the+new+state%2C+you+may+have+to+do+a+hard+reload+%28Typically+Ctrl%2BF5%29+on+the+readme.&title=RIGHT)
 
-[LEFT](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else&title=LEFT)
+[LEFT](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Do+not+change+any+text%2C+just+click+%22Submit+new+issue%22.+When+the+issue+has+been+closed%2C+that+means+it+has+been+processed+%28Takes+around+40+seconds%29.+%0D%0A%0D%0ATo+view+the+new+state%2C+you+may+have+to+do+a+hard+reload+%28Typically+Ctrl%2BF5%29+on+the+readme.&title=LEFT)
 
-[START](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else&title=START)
+[START](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Do+not+change+any+text%2C+just+click+%22Submit+new+issue%22.+When+the+issue+has+been+closed%2C+that+means+it+has+been+processed+%28Takes+around+40+seconds%29.+%0D%0A%0D%0ATo+view+the+new+state%2C+you+may+have+to+do+a+hard+reload+%28Typically+Ctrl%2BF5%29+on+the+readme.&title=START)
 
-[SELECT](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else&title=SELECT)
+[SELECT](https://github.com/vetlemangrud/github-plays-pokemon/issues/new?body=Do+not+change+any+text%2C+just+click+%22Submit+new+issue%22.+When+the+issue+has+been+closed%2C+that+means+it+has+been+processed+%28Takes+around+40+seconds%29.+%0D%0A%0D%0ATo+view+the+new+state%2C+you+may+have+to+do+a+hard+reload+%28Typically+Ctrl%2BF5%29+on+the+readme.&title=SELECT)
 
 ![See full run here](complete.mp4)
