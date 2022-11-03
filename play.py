@@ -55,7 +55,14 @@ for i in range(500):
     gameboy.tick()
     images.append(addFrame(gameboy.screen_image()))
 
-images[0].save('pillow_imagedraw.gif',
+# Update gifs folder
+if os.path.exists("gifs/4.gif"):
+    os.remove("gifs/4.gif")
+for i in range(3, -1, -1):
+    if os.path.exists(f"gifs/{i}.gif"):
+        os.rename(f"gifs/{i}.gif", f"gifs/{i+1}.gif")
+
+images[0].save('gifs/0.gif',
                save_all=True, append_images=images[1:], optimize=False, duration=(len(images)/60), loop=0)
 
 # Save state

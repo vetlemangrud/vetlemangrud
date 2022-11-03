@@ -1,5 +1,5 @@
 # Play Pokémon on my page! 
-![Latest move](pillow_imagedraw.gif)
+![Latest move](gifs/0.gif)
 
 You may have to do a hard refresh to get the latest move (Ctrl-F5 usually)
 
