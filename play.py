@@ -43,6 +43,8 @@ def addFrame(image):
     new.paste(image, (68, 61), image.convert("RGBA"))
     return new
 
+images = []
+
 if (issueTitle in buttonPresses.keys()):
     # Hold down button in 50 frames
     gameboy.send_input(buttonPresses[issueTitle])
@@ -53,7 +55,7 @@ if (issueTitle in buttonPresses.keys()):
 
 
 
-images = []
+
 # Run the game for 500 frames (8-ish seconds)
 for i in range(500):
     gameboy.tick()
