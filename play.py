@@ -38,16 +38,20 @@ buttonReleases = {
     "LEFT":pyboy.WindowEvent.RELEASE_ARROW_LEFT,
     "RIGHT":pyboy.WindowEvent.RELEASE_ARROW_RIGHT
 }
-
-if (issueTitle in buttonPresses.keys()):
-    gameboy.send_input(buttonPresses[issueTitle])
-    gameboy.tick()
-    gameboy.send_input(buttonReleases[issueTitle])
-
 def addFrame(image):
     new = frameImage.copy()
     new.paste(image, (68, 61), image.convert("RGBA"))
     return new
+
+if (issueTitle in buttonPresses.keys()):
+    # Hold down button in 50 frames
+    gameboy.send_input(buttonPresses[issueTitle])
+    for i in range(50):
+        gameboy.tick()
+        images.append(addFrame(gameboy.screen_image()))
+    gameboy.send_input(buttonReleases[issueTitle])
+
+
 
 images = []
 # Run the game for 500 frames (8-ish seconds)
